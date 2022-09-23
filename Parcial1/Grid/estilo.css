@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(103, 103, 235);
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: 300px  300px  300px;
+    grid-template-rows: 250px  250px  250px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow:column ;
+    background-image: linear-gradient(rgb(85, 85, 233), green);
+    
+    
+    
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(102, 207, 16);
+    text-align: center;
+    border: 2px coral;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: red  ;
+    font-size: 50px;
+}
+#caja1{
+    border-radius: 50px;
+    background-color:red;
+   color: aliceblue;
+   
+   
+}
+#caja2{
+    background-color: violet;
+    color:black;
+    border-radius: 50px;
+    
+}
+#caja3{
+    border-radius: 50px;
+    color:rgb(255, 38, 0);
+
+}
+#caja4{
+    color: blueviolet;
+    border-radius: 50px;
+}
+#caja5{
+    border-radius: 50px;
+    background-color: darkorange;
+    color: azure;
+    
+}
+    
+#caja6{
+    color: whitesmoke;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+#caja8{
+    color: blueviolet;
+    border-radius: 50px;
+}
+#caja7{
+    border-radius: 50px;
+    background-color: blue;
+    color: aliceblue;
+
+}
+#caja9{
+    border-radius: 50px;
+    background-color: red;
+    color: aliceblue;
+}
