@@ -14,15 +14,22 @@
     grid-template-rows: 250px  250px  250px;
     background-image: linear-gradient(rgb(85, 85, 233), rgb(65, 156, 144));
     background-image:radial-gradient(rgb(70, 167, 223), rgb(74, 112, 218));
+    cursor: pointer;
 }
 .caja{
     border: 3px solid black;
     width: 200px;
     height: 200px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(16, 88, 88);
     font-size: 20px;
     border-radius: 25px;
     
+}
+.blueMode{
+    background-color: blue;
+    color:wheat;
+    border: 2px solid wheat;
 }
