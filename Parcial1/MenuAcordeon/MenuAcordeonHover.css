@@ -23,6 +23,6 @@ ul > li:hover > ul{
 }
 .subOpcion{
     padding-left: 20px;
-    background: grey;
-    color: wheat;
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
