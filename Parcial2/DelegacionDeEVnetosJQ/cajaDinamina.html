@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegacion de eventos jq</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./jquery-3.6.1.min.js"></script>
+
+    <style>
+      thead > tr :nth-of-type(odd) {
+        background-color: bisque;
+      }
+      tbody > tr:hover {
+        background-color: aqua;
+      }
+      td :active {
+        background-color: red;
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor" id="cont">
+      <thead>
+        <tr>
+          <div id="caja1" class="caja" onclick="Saludo()"><h1>Inicio</h1></div>
+          <div id="caja2" class="caja">Categoria</div>
+          <div id="caja3" class="caja">Fechas</div>
+          <div id="caja4" class="caja">Lugares</div>
+          <div id="caja5" class="caja">Acerca</div>
+          <div id="caja6" class="caja">Telefono</div>
+        </tr>
+      </thead>
+    </div>
+    <script src="cajaDinamica.js"></script>
+  </body>
+</html>
