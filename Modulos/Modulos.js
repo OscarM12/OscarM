@@ -5,3 +5,4 @@ export function mayusculas(cad) {
 export function longitud (cad){
     return cad.lenght;
 }
+//
