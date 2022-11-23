@@ -1,21 +1,15 @@
 * {
-  margin: 0;
+  margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-.row {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
+
 .caja {
-  margin-top: 250px;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  grid-auto-rows: column;
-  align-items: center;
-  border: 2px solid black;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
