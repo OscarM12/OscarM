@@ -2,9 +2,9 @@
     include("conection.php");
     $con=conectar();
 
-$nombre=$_GET['id'];
+$id=$_GET['id'];
 
-$sql="SELECT * FROM usuarios WHERE Id='$nombre'";
+$sql="SELECT * FROM usuarios WHERE Id='$id'";
 $query=mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -22,18 +22,16 @@ $row=mysqli_fetch_array($query);
         
     </head>
     <body>
-                <div class="container mt-5">
-                    <form action="update.php" method="POST">
-                      
-                                <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="<?php echo $row['Nombre']  ?>">
-                                <input type="text" class="form-control" name="paterno" placeholder="Paterno" value="<?php echo $row['Paterno']  ?>">
-                                <input type="text" class="form-control" name="materno" placeholder="Materno" value="<?php echo $row['Materno']  ?>">
-                                <input type="text" class="form-control" name="telefono" placeholder="Telefono" value="<?php echo $row['Telefono']  ?>">
-                                <input type="text" class="form-control" name="email" placeholder="email" value="<?php echo $row['Correo']  ?>">
-                                
-                            <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
-                    </form>
-                    
-                </div>
+        <div class="container mt-5">
+            <form action="update.php" method="POST">
+                <input type="text" name="id" value="<?php echo $row['Id']  ?>">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="<?php echo $row['Nombre']  ?>">
+                <input type="text" class="form-control" name="paterno" placeholder="Paterno" value="<?php echo $row['Paterno']  ?>">
+                <input type="text" class="form-control" name="materno" placeholder="Materno" value="<?php echo $row['Materno']  ?>">
+                <input type="text" class="form-control" name="telefono" placeholder="Telefono" value="<?php echo $row['Telefono']  ?>">
+                <input type="text" class="form-control" name="email" placeholder="email" value="<?php echo $row['Correo']  ?>">
+                <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
+            </form>
+        </div>
     </body>
 </html>

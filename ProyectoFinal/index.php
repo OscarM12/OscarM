@@ -6,7 +6,7 @@
     $sql="SELECT *  FROM usuarios";
     $query=mysqli_query($con,$sql);
 
-    $row=mysqli_fetch_array($query);
+    // $row=mysqli_fetch_array($query);
 ?>
 
 <html lang="en">
@@ -63,7 +63,7 @@
                                                 <th><?php  echo $row['Materno']?></th>
                                                 <th><?php  echo $row['Telefono']?></th>    
                                                 <th><?php  echo $row['Correo']?></th>
-                                                <th><a href="update.php?id=<?php echo $row['Id'] ?>" class="btn btn-info">Editar</a></th>
+                                                <th><a href="actualizar.php?id=<?php echo $row['Id'] ?>" class="btn btn-info">Editar</a></th>
                                                 <th><a href="delete.php?id=<?php echo $row['Id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                             </tr>
                                         <?php 
