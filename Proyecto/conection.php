@@ -6,9 +6,9 @@ $password = "password";
 $dbname = "";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
-$consulta = "select * form  usuario";
+$consulta = "select * from  usuario";
 $registros = mysqli_query($conn,$consulta) or die ("Problemas en el select");
 
 
