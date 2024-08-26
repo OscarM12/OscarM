@@ -1,6 +1,6 @@
 # Instituto Tecnologico de Nuevo Laredo
 
-## Programacion Web
+## Desarrollo API REST
 
  *Nombre del alumno:*  **Oscar Moreno Ramos**
 
